@@ -1,4 +1,4 @@
-/import os 
+import os 
 
 
 print("this script will install metasploit")
