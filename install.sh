@@ -8,4 +8,6 @@ pkg install figlet
 
 figlet tool req installed 
 
+sleep 5s
+
 python  yousseftool.py
