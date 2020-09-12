@@ -221,12 +221,12 @@ while loop:
             break
     elif what == "5":
         os.system("pkg update -y")
-        os.system("pkg install -y git")
-        os.system("cd /data/data/com.termux/files/home && git clone https://github.com/themastersunil/ngrok.git")
+        os.system("pkg install -y git && pkg install python")
+        os.system("cd /data/data/com.termux/files/home && pip install pyngrok")
         os.system("cd /data/data/com.termux/files/home")
         print("====================================")
         print("[+] ngrok installed successfully :)")
-        print("[+] Go to ngrok folder and type './ngrok http 80' to start.")
+        print("[+] type ngrok http 80' to start.")
         print("====================================")
         rmenu = input("[?] Back to Menu? (y/n): ")
         if rmenu == "y":
