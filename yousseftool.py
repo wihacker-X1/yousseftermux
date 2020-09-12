@@ -223,7 +223,7 @@ while loop:
         os.system("pkg update -y")
         os.system("pkg install -y git && pkg install python")
         os.system("cd /data/data/com.termux/files/home && pip3 install pyngrok")
-        os.system("cd /data/data/com.termux/files/home")
+        os.system("cd /data/data/com.termux/files/home && ngrok")
         print("====================================")
         print("[+] ngrok installed successfully :)")
         print("[+] type ngrok http 80' to start.")
